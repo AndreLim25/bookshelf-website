@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+}
+
+h1 {
+  color: white;
+  padding: 16px 0;
+  background-color: #133e87;
+}
+
+h2 {
+  color: #133e87;
+}
+
+main {
+  gap: 32px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  gap: 16px;
+  width: 80%;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+#bookForm {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#bookForm div {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#bookForm .markAsCompleted {
+  align-items: center;
+  flex-direction: row;
+}
+
+#bookForm input,
+#searchBook input {
+  height: 32px;
+  border: none;
+  padding: 5px;
+  font-size: 100%;
+  box-shadow: 0 0 1px gray;
+  font-family: "Ubuntu", sans-serif;
+}
+
+#bookForm input:focus,
+#searchBook input:focus {
+  outline: none;
+  border: 2px solid #608bc1;
+}
+
+#bookForm #bookFormIsComplete {
+  width: 16px;
+  box-shadow: none;
+}
+
+#bookForm button,
+#searchBook button {
+  border: none;
+  cursor: pointer;
+  padding: 12px 0;
+  font-size: 16px;
+  border-radius: 4px;
+  font-family: "Roboto Slab", serif;
+  transition: 0.3s ease-out;
+}
+
+#bookForm button:hover,
+#searchBook button:hover {
+  color: white;
+  background-color: #608bc1;
+}
+
+#searchBook {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#searchBook input {
+  width: 80%;
+}
+
+#searchBook button {
+  padding: 0;
+  width: 18%;
+  height: 32px;
+  border-radius: 0;
+  line-height: 32px;
+}
+
+#incompleteBookList,
+#completeBookList {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bookItem {
+  gap: 10px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f3e0;
+}
+
+.bookItem div {
+  gap: 12px;
+  display: flex;
+}
+
+.bookItem div button {
+  width: 120px;
+  min-height: 32px;
+  padding: 4px;
+  border: none;
+  color: white;
+  font-family: "Roboto Slab", serif;
+}
+
+.completeButton {
+  background-color: #00bd68;
+}
+
+.deleteButton {
+  background-color: #ff4545;
+}
+
+.editButton {
+  background-color: #fc8f54;
+}
+
+@media screen and (width <= 468px) {
+  section {
+    width: 100%;
+  }
+}
